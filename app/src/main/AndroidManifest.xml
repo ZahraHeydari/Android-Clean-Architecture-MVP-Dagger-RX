@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.android.post">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!--when one of these configurations change,
+    Activity does not restart.
+      Instead, the Activity receives a call to
+       onConfigurationChanged().
+        This method is passed a Configuration object that specifies
+        the new device configuration.
+         By reading fields in the Configuration,
+          you can determine the new configuration
+           and make appropriate changes by updating
+           the resources used in your interface.
+           At the time this method is called,
+            your activity's Resources object is updated to return resources
+             based on the new configuration,
+              so you can easily reset elements of your UI without
+              the system restarting your activity.-->
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:name=".MainApplication"
+            android:theme="@style/AppTheme">
+        <activity android:name=".presentation.posts.PostsActivity"
+                  android:windowSoftInputMode="stateHidden"
+                  android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

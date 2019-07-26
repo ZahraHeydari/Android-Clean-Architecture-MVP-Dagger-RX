@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:padding="16dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorTextPrimary"
+            android:id="@+id/post_id_text_view"
+            android:textSize="@dimen/headline"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_below="@id/post_id_text_view"
+            android:textAlignment="center"
+            android:layout_margin="16dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/title"
+            android:text="@string/okay"
+            android:layout_centerHorizontal="true"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/background_white_color_accent_border_corner_rounded"
+            android:id="@+id/post_okay_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

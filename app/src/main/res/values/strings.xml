@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Post</string>
+    <string name="type_your_text">Type your text to find …</string>
+    <string name="post_id">Post ID: </string>
+    <string name="okay">Okay</string>
+    <string name="no_internet_connection_available">No internet connection available at this time!</string>
+    <string name="no_result_found">No result found!</string>
+</resources>
